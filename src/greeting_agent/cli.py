@@ -1,4 +1,4 @@
-"""Console runner for the greeting agent."""
+"""Console runner for the hobby poem agent."""
 
 from __future__ import annotations
 
@@ -24,7 +24,7 @@ def _ensure_api_key() -> str:
   api_key = os.environ.get("GOOGLE_API_KEY") or os.environ.get("GENAI_API_KEY")
   if not api_key:
     raise RuntimeError(
-        "Set GOOGLE_API_KEY or GENAI_API_KEY before running the greeting agent."
+        "Set GOOGLE_API_KEY or GENAI_API_KEY before running the hobby poem agent."
     )
   return api_key
 
@@ -52,7 +52,7 @@ def _stream_agent_responses(events: Iterable[Event]) -> Generator[str, None, Non
 
 
 def run_cli() -> None:
-  """Starts the greeting agent in an interactive console loop."""
+  """Starts the hobby poem agent in an interactive console loop."""
   load_dotenv()
   _ensure_api_key()
 
@@ -68,7 +68,7 @@ def run_cli() -> None:
   user_id = "local-user"
   session_id = "local-session"
 
-  print("Greeting agent ready. Type 'exit' to quit.")
+  print("Hobby poem agent ready. Tell me your hobby! Type 'exit' to quit.")
   try:
     while True:
       try:

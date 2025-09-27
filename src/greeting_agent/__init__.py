@@ -1,4 +1,4 @@
-﻿"""Greeting agent package."""
+"""Hobby poem agent package."""
 
 from .agent import create_greeting_agent, root_agent
 from .cli import run_cli

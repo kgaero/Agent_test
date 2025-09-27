@@ -1,0 +1,227 @@
+{
+  "eval_set_id": "evalset47fcf6",
+  "name": "greeting_agent-generated",
+  "description": null,
+  "eval_cases": [
+    {
+      "eval_id": "happy_kdrama",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "hola",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Greetings! I'm in the mood to versify. Tell me, what hobby tickles your fancy? What delightful pastime fills your hours with joy?\n",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "role": "user"
+        },
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "watching korean drama on netflix",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Ah, a fellow K-drama enthusiast! Did you know that the term \"Netflix and chill\" became popular because people would invite others over to watch Netflix, and one of the most popular categories of shows watched were K-dramas?\n\nAlso, in some K-dramas, the actors are not actually drinking alcohol in the scenes, but rather barley water or diluted apple juice because of filming restrictions.\n\nHere's a little poem inspired by your hobby:\n\nIn K-dramas, tears may freely flow,\n\"Netflix and chill\"—a secret we all know.\nThough barley water feigns as soju's kiss,\nWe're hooked on chaebols and their stylish bliss.\nSo grab your snacks, the night is ours,\nFor K-drama magic holds enchanting powers!\n",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "role": "user"
+        },
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "thanks",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "You're welcome! Happy watching! I hope you find more K-dramas that bring you joy!\n",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "role": "user"
+        }
+      ]
+    },
+    {
+      "eval_id": "ask_hobby_first",
+      "conversation": [
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "hi",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Hello there! To craft the perfect poem, I need to know: what hobby tickles your fancy? Tell me, and let's get started!\n",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "role": "user"
+        },
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "painting",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Ah, painting! Did you know that the Mona Lisa doesn't have any eyebrows? Also, the most expensive painting ever sold was the Salvator Mundi for \\$450.3 million!\n\nHere's a poem for you:\n\nWith brushes and hues, a world you create,\nLike Mona Lisa, though eyebrows can wait.\nA canvas of dreams, so vibrant and grand,\nWorth more than Salvator Mundi, close at hand!\nSo paint on, create, let colors ignite,\nA masterpiece brewing, a glorious sight!\n",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "role": "user"
+        },
+        {
+          "user_content": {
+            "parts": [
+              {
+                "text": "bye",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "final_response": {
+            "parts": [
+              {
+                "text": "Farewell, creative soul! May your colors always be bright and your canvases ever inspiring. Keep painting your world with joy!\n",
+                "inline_data": null,
+                "file_data": null,
+                "function_call": null,
+                "function_response": null,
+                "code_execution_result": null,
+                "executable_code": null,
+                "video_metadata": null,
+                "thought": null,
+                "thought_signature": null
+              }
+            ]
+          },
+          "role": "user"
+        }
+      ]
+    }
+  ]
+}
