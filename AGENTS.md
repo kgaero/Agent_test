@@ -59,7 +59,8 @@ Agent-facing instructions for working in this repo (different from the human REA
 ---
 
 ## Setting Up API Keys
-Use the `.env` file present in the root folder for `GOOGLE_API_KEY` keys
+Use the `.env` file present in the root folder for `GOOGLE_API_KEY` keys.
+
 If the `.env` file is **not present** or `GOOGLE_API_KEY` is missing, ask user to follow these steps:
 
 1. Create an account in Google Cloud: https://cloud.google.com/?hl=en  
