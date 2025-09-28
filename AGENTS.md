@@ -8,6 +8,8 @@ Agent-facing instructions for working in this repo (different from the human REA
 **Stack:** Python for code, **Google Agent Development Kit (ADK)** for agent scaffolding, **Gemini** for LLM calls.
 
 **Hard rule:** Before every LLM or tool call, **read and honor `llms-full.txt`**. Do **not** modify it.
+**Hard rule:** Always prefer python and Google ADK framework APIs (packages/classes/functions) over writing new ones. **Look what is available in Google ADK in the `llms-full.txt`**. Do **not** modify it.
+**Hard rule:** Always reuse python packages/classes/functions already available. Do not create unless really necessary. Write new code as minimum as possible while following coding best practices.
 **Hard rule:** Before writing docs, **read and honor `Doc_Spec.md`**. Do **not** modify it.
 
 ---
@@ -144,6 +146,22 @@ mypy src               # if type checking is enabled
 
 * Treat ADK as a **library**. Do **not** modify ADK source or contribute upstream from this repo.
 * Use `adk web` / `adk api_server` for **local/manual testing only** (not a production dependency).
+
+## Disallowed Patterns
+- Declaring new agent base classes if an ADK equivalent exists.
+- Copying utilities that exist in ADK tools.
+
+## When adding code
+- Search the codebase and ADK docs first. Resuse ADK packages/classes/functions.
+- If you believe no ADK API exists, add a comment explaining the search terms and links checked.
+- Do not create what is already present
+
+## Acceptance Criteria for any PR
+- Linter passes “ADKReuseRule”.
+- PR description includes “ADK search summary”.
+
+## In the Planning steps
+- Write which ADK packages/classes/functions will you use.
 
 ### ADK agent layout & naming (best practices)
 
