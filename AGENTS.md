@@ -7,10 +7,33 @@
 Agent-facing instructions for working in this repo (different from the human README).
 **Stack:** Python for code, **Google Agent Development Kit (ADK)** for agent scaffolding, **Gemini** for LLM calls.
 
+**Hard rule:** Treat AGENTS.md as a Primary Constraint: Treat all "Hard rules" in AGENTS.md as primary, non-negotiable constraints that shape plan, not as secondary checks.
 **Hard rule:** Before every LLM or tool call, **read and honor `llms-full.txt`**. Do **not** modify it.
 **Hard rule:** Always prefer python and Google ADK framework APIs (packages/classes/functions) over writing new ones. **Look what is available in Google ADK in the `llms-full.txt`**. Do **not** modify it.
 **Hard rule:** Always reuse python packages/classes/functions already available. Do not create unless really necessary. Write new code as minimum as possible while following coding best practices.
 **Hard rule:** Before writing docs, **read and honor `Doc_Spec.md`**. Do **not** modify it.
+
+**Hard rule:** Prioritize Framework Reuse: Before you propose creating any new class, function, or component, absolute first step will be to thoroughly search the existing codebase and documentation (especially llms-full.txt) for a pre-existing equivalent within the project's chosen framework (in this case, Google ADK).
+
+**Hard rule:** Explicitly State Reuse in Plans: Plans should explicitly mention the components you intend to reuse. This makes adherence to the project's rules transparent from the start.
+**Hard rule:** How to Handle Conflicts: User Instructions vs. AGENTS.md Rules
+This section clarifies how the agent should prioritize instructions when the user's request seems to conflict with the rules defined in this file.
+
+Scenario:
+The user provides a prompt that describes a feature or component conceptually. For example, the prompt might say, "Implement a conceptual Runner that wires user input to the agent," which might seem like an instruction to build a new Runner class from scratch. This could conflict with a "Hard rule:" in this document that states, "Always prefer reusing existing framework APIs (like the ADK Runner) over creating new ones."
+
+Resolution Protocol (Instructions for the Agent):
+
+In this scenario, you must follow this protocol:
+
+Prioritize the User's Goal, Not Their Implied Method. Your primary objective is to fulfill the user's high-level goal (e.g., "create a runnable demo"). Treat conceptual descriptions in the user's prompt as a definition of the requirements for the final outcome, not as a strict command to build components from the ground up.
+
+AGENTS.md Dictates the Implementation. You must adhere to the "Hard rules" in this document for the how. If a rule mandates reusing an existing framework component, you must use that component to achieve the user's goal.
+
+Explicit User Commands Override AGENTS.md. You should only override a "Hard rule" if the user gives a direct, explicit, and unambiguous command to do so (e.g., "You must write a new Runner class from scratch and you are forbidden from using the ADK one."). If there is any ambiguity, the rules in AGENTS.md take precedence for the implementation method.
+
+State Your Plan Clearly. Your initial plan must reflect this protocol. It should clearly state the user's goal and then describe how you will achieve it by reusing the components mandated by this document. For example: "To achieve the user's goal of a runnable demo, I will use the existing google.adk.runners.Runner as instructed by AGENTS.md."
+
 
 ---
 
